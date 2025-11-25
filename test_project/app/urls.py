@@ -7,7 +7,7 @@ from .views import TimeEntryViewSet
 
 router=DefaultRouter()
 
-router.register("time-entries", TimeEntryViewSet)
+router.register("timeentries", TimeEntryViewSet, basename='timeentry')
 
 urlpatterns = [
     path('api/', include(router.urls)),
